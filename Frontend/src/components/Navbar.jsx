@@ -1,0 +1,41 @@
+
+import React, { useState, useEffect } from "react";
+// import { Link, useNavigate } from "react-router-dom";
+
+function Navbar() {
+//   const navigate = useNavigate();
+//   const [user, setUser] = useState(null);
+//   const [dropdownOpen, setDropdownOpen] = useState(false); 
+
+//   useEffect(() => {
+//     const storedUser = JSON.parse(localStorage.getItem("user"));
+//     if (storedUser) {
+//       setUser(storedUser); // ✅ Set logged-in user
+//     }
+//   }, []);
+
+//   const handleLogout = () => {
+//     localStorage.removeItem("user");
+//     localStorage.removeItem("token");
+//     setUser(null);
+//     navigate("/");
+//   };
+
+  return (
+    <div className="max-w-screen-2xl mx-auto container px-6 py-3 md:px-40 shadow-lg h-16 fixed border-b-2 bg-white">
+      <div className="flex justify-between">
+        <h1 className="text-2xl cursor-pointer font-bold text-white">
+          Word<span className="text-3xl text-green-500">To</span>PDF
+        </h1>
+        <div className="flex gap-4">
+          <h1 className="mt-1 text-2xl cursor-pointer font-bold hover:scale-125 duration-300 text-black">
+            Home
+          </h1>
+
+         </div>
+      </div>
+    </div>
+  );
+}
+
+export default Navbar;
